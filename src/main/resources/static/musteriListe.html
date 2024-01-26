@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Müşteri Liste</title>
+</head>
+<body>
+
+  <div id="musteriList">
+
+  </div>
+
+  <script>
+    let musteriListElement=document.getElementById('musteriList');
+    musteriListElement.innerHTML='';
+    fetch('http://localhost:9090/musteri/findall')
+            .then(data=>data.json())
+            .then(data=>{
+              data.map(musteri=>{
+                musteriListElement.innerHTML+=` <div>${musteri.ad}</div>`
+              })
+            })
+
+  </script>
+</body>
+</html>

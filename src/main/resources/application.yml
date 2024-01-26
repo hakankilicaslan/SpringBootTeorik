@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+spring:
+#  datasource: Docker için H2Database kullandığımızdan buradaki postgresql olanları gizledik ve H2 default olarak devreye girdiği için onunla alakalı bir şey yazmamıza da gerek kalmadı.
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/Java12SpringDemo
+#    username: postgres
+#    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    # Parametre iki nokta üst üste ardından bir boşşluk bırak ve değer gir.
+    # bir boşluk bırakmazsanız hata alırsınız.
+    # alt kırılımlar bir tab içeride olmalıdır.
+    # Girintiler önemlidir.
+    # bu dosya sizin projenizin temel ayar dosyasıdır.
+

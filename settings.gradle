@@ -1,0 +1,11 @@
+rootProject.name = 'demo'
+include 'LooseCouplingOrnek'
+include 'TightCouplingOrnek'
+include 'IoCSpringDI'
+include 'PojoEjb'
+include 'SpringBean'
+include 'SpringNotes'
+include 'SpringBean'
+include 'DependencyInjectionTipleri'
+include 'PrePostAnotasyon'
+
